@@ -141,6 +141,7 @@ export class TSNE {
       if (this.config.knnMode !== undefined) {
         this.knnMode = this.config.knnMode;
       }
+      this.initialized = false;
     }
 
     // Neighbors must be roughly 3*perplexity and a multiple of 4
